@@ -250,6 +250,7 @@ function<bool(const Chain& left, const Chain& right)> CompareChainsByNext =
 [](const Chain& left, const Chain& right) {
     return left.NextJobId() < right.NextJobId();
 };
+
 function<bool(const Chain& left, const Chain& right)> CompareChainsByFirst =
 [](const Chain& left, const Chain& right) {
     return left.FirstJobId() < right.FirstJobId();
