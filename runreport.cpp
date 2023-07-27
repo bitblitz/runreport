@@ -152,7 +152,8 @@ const string EXPECTED_HEADER = "#job_id,runtime_in_seconds,next_job_id";
 
 // Set implementation runs about 1 second slower for 1 million records, but uses about half memory of 
 // the Map implementation in debug mode. Set is still more memory efficient in release possibly due to 
-// one less pointer dereference.  Numbers from VS debugging.
+// one less pointer dereference.  Numbers from VS debugging, but a small (single) sample size.
+// 
 // perf for ~1 million rows.  With and without formatting because that formatting takes up a lot of the total time.
 //
 //       Debug              Release             Debug (no format)       Release (no format) 
